@@ -1,5 +1,78 @@
-nav{
+body {
+    background-image: url('./images/ny.jpg');
+    background-size: 100%;
+    background-position: top;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
     text-align: center;
+    align-items: center;
+    height: 40px;
+    background-color: #182626;
+}
+
+nav div {
+    flex: 1;
+    margin-left: 20vw;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+}
+
+#navbarSearch {
+    display: flex;
+    margin-left: auto;
+}
+
+#search {
+    color: turquoise;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+}
+
+#search::placeholder {
+    color: turquoise;
+}
+
+#searchKeyWord {
+    background-color: turquoise;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#searchKeyWord:hover {
+    background-color: darkturquoise;
+}
+
+#resetSearchBox {
+    background-color: turquoise;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.homePage {
+    color: white;
+}
+
+#resetSearchBox:hover {
+    background-color: darkturquoise;
 }
 
 .homePage {
@@ -9,4 +82,12 @@ nav{
 
 #searchResults {
     float: right;
+}
+
+.teamDiv {
+    display: flex;
+}
+
+.team {
+    display: inline-block;
 }
