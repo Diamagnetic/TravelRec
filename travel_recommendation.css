@@ -1,3 +1,7 @@
 nav{
     text-align: center;
 }
+
+.home_page {
+    display: inline-block;
+}
