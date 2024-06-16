@@ -4,4 +4,9 @@ nav{
 
 .homePage {
     display: inline-block;
+    width: 50%;
+}
+
+#searchResults {
+    float: right;
 }
