@@ -4,13 +4,19 @@ body {
     background-position: top;
     font-family: sans-serif;
     margin: 0;
+    color: white;
+}
+
+body > div {
+    margin-left: 7vw;
+    margin-top: 5vw;
 }
 
 nav {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     align-items: center;
     height: 40px;
@@ -44,7 +50,7 @@ nav a {
     color: turquoise;
 }
 
-#searchKeyWord {
+input[type="button"] {
     background-color: turquoise;
     color: white;
     border-radius: 5px;
@@ -53,8 +59,12 @@ nav a {
     margin-left: 10px;
 }
 
-#searchKeyWord:hover {
+input[type="button"]:hover {
     background-color: darkturquoise;
+}
+
+#booking {
+    margin-left: 0px;
 }
 
 #resetSearchBox {
@@ -68,20 +78,69 @@ nav a {
 }
 
 .homePage {
+    display: inline-block;
+    width: 50%;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.homePage #intro {
+    width: 20vw;
+}
+
+button {
+    background-color: turquoise;
     color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: darkturquoise;
 }
 
 #resetSearchBox:hover {
     background-color: darkturquoise;
 }
 
-.homePage {
-    display: inline-block;
-    width: 50%;
-}
-
 #searchResults {
     float: right;
+}
+
+.searchResult {
+    width: 40vw;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.searchResult img {
+    width: 40vw;
+}
+
+.searchResult p {
+    color: #CCCDD6;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.searchResult h3 {
+    color: black;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.searchResult input {
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .teamDiv {
