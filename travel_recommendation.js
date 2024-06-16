@@ -22,11 +22,8 @@ function searchKeyword() {
             throw new Error('No result found for ' + stringToCall);
         }
 
-        console.log(data);
-        console.log(stringToCall);
-
         if(stringToCall !== 'countries') {
-            resultData.push(...data.stringToCall);
+            resultData.push(...data[stringToCall]);
         }
 
         resultData.forEach((result, index) => {
@@ -42,4 +39,8 @@ function searchKeyword() {
     .catch((error) => {
         console.log('Error: ' + error)
     });
+}
+
+function resetSearch() {
+    document.getElementById('searchResults').innerHTML = '';
 }
