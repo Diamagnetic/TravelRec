@@ -13,9 +13,9 @@
             <a href = './travel_recommendation_contact.html'>Contact Us</a>
             
             <form id = 'navbar_search'>
-                <input type='text' id='search' placeholder = 'Enter a destination or keyword'>
-                <button type='submit' id = 'searchKeyWord' onclick = 'searchKeyWord()'>Search</button>
-                <button type='reset' id = 'resetSearchBox'>Reset</button>
+                <input type='text' id='search' placeholder = 'Enter a destination or keyword'/>
+                <input type='button' id = 'searchKeyWord' onclick = 'searchKeyword()' value = 'Search'/>
+                <input type='reset' id = 'resetSearchBox'/>
             </form>
         </nav>
 
@@ -25,6 +25,8 @@
             It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
         </p>
 
-        <button id = 'booking' onclick = 'bookNow()'>BOOK NOW</button>
+        <button id = 'booking' >BOOK NOW</button>
+
+        <script src = './travel_recommendation.js'></script>
     </body>
 </html>
