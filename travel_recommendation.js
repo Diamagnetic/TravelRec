@@ -18,8 +18,8 @@ function searchKeyword() {
         } else if(/temple(s)?.*/.exec(navbarInput)) {
             stringToCall = 'temples';
         } else {
-            resultDiv.innerHTML = `<div class = 'errorBox'>No result found for ${stringToCall}</div>`;
-            throw new Error('No result found for ' + stringToCall);
+            resultDiv.innerHTML = `<div class = 'errorBox'>No result found for "${navbarInput}"</div>`;
+            return ;
         }
 
         if(stringToCall !== 'countries') {
@@ -35,9 +35,6 @@ function searchKeyword() {
                     <input type = 'button' value = 'Visit'/>
                 </div>`;
         });
-    })
-    .catch((error) => {
-        console.log('Error: ' + error)
     });
 }
 
