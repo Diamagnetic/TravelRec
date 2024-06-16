@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>About Us - Travel Reco</title>
+    <link rel='stylesheet' href='./travel_recommendation.css'>
+    </head>
+
+    <body>
+        <nav>
+            <a href = './travel_recommendation.html'>Home</a>
+            <a href = './travel_recommendation_about.html'>About Us</a>
+            <a href = './travel_recommendation_contact.html'>Contact Us</a>
+        </nav>
+
+        <h1>CONTACT US</h1>
+        <p>
+            Get in touch
+        </p>
+
+        <form id = 'contact'>
+            <div>
+                <div>
+                    <label for = 'name'>Name</label>
+                </div>
+                <div>
+                    <input type = 'text' id = 'name' name = 'name' placeholder = 'Enter your name'>
+                </div>
+            <div>
+                <div>
+                    <label for = 'email'>Email</label>
+                </div>
+                <div>
+                    <input type ='email' id='email' pattern='.+@example\.com' placeholder = 'Enter your email' required>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for = 'message'>Message</label>
+                </div>
+                <div>
+                    <input type = 'text' id = 'message' name = 'message' placeholder = 'Enter your message'>
+                </div>
+            </div>
+            <div>
+                <button type ='submit' id = 'submitContactInfo' onclick = 'submitContactInfo()'>Search</button>
+            </div>
+        </form>
+    </body>
+</html>
