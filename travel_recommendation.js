@@ -1,6 +1,7 @@
 function searchKeyword() {
     const navbarInput = document.getElementById('navbarSearch').trim().toLowerCase();
     const resultDiv = document.getElementById('searchResults');
+    resultDiv.innerHTML = '';
     
     fetch('./travel_recommendation_api.json')
     .then(response => response.json())
@@ -25,6 +26,15 @@ function searchKeyword() {
             resultData.push(...data.stringToCall);
         }
 
-        
+        resultData.forEach((result, index) => {
+            resultDiv.push(
+                `<div class = 'searchResult' id = 'seachResult: ${index}'>
+                    <img src = './images/${result.imageUrl}'>
+                    <h3>${result.city}</h3>
+                    <p>${result.description}</p>
+                    <input type = 'button' value = 'Visit'/>
+                </div>`
+            );
+        });
     });
 }
