@@ -13,8 +13,8 @@
             <a href = './travel_recommendation_contact.html'>Contact Us</a>
         </nav>
 
-        <h1>ABOUT US</h1>
-        <p>
+        <h1 id = 'about'>ABOUT US</h1>
+        <p id = 'aboutDesc'>
             Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to
             provide the best experience for people traveling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first and working together to achieve our goals.<br>
             Feel free to explore our website to learn more about what we offer!
@@ -32,26 +32,22 @@
                 {
                     name : 'John Doe',
                     title: 'CEO',
-                    description: 'John is responsible for',
                 },
                 {
                     name : 'Celina Thomas',
                     title: 'Team Lead',
-                    description: 'Celina Thomas is responsible for',
                 },
                 {
                     name : 'Mike Tyson',
                     title: 'Delivery Head',
-                    description: 'Mike Tyson is responsible for',
                 }
             ];
 
             const team = document.getElementById('teamMembers');
             team.innerHTML = '';
 
-            debugger;
             teamMembers.forEach((member) => {
-                team.innerHTML += `<div class = 'team'><h3>${member.name}</h3><p>${member.description}</p><button>${member.title}</button></div>`;
+                team.innerHTML += `<div class = 'team'><h3>${member.name}</h3><button>${member.title}</button></div>`;
             });
         </script>
     </body>
