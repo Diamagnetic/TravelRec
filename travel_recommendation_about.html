@@ -23,10 +23,36 @@
         <div>
             <h2>Our<br>Team</h2>
 
-            <div class = 'teamMembers'>
+            <div id = 'teamMembers'>
             </div>
         </div>
 
-        <script src = './travel_recommendation.js'></script>
+        <script>
+            const teamMembers = [
+                {
+                    name : 'John Doe',
+                    title: 'CEO',
+                    description: 'John is responsible for',
+                },
+                {
+                    name : 'Celina Thomas',
+                    title: 'Team Lead',
+                    description: 'Celina Thomas is responsible for',
+                },
+                {
+                    name : 'Mike Tyson',
+                    title: 'Delivery Head',
+                    description: 'Mike Tyson is responsible for',
+                }
+            ];
+
+            const team = document.getElementById('teamMembers');
+            team.innerHTML = '';
+
+            debugger;
+            teamMembers.forEach((member) => {
+                team.innerHTML += `<div class = 'team'><h3>${member.name}</h3><p>${member.description}</p><button>${member.title}</button></div>`;
+            });
+        </script>
     </body>
 </html>

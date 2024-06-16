@@ -41,34 +41,3 @@ function searchKeyword() {
 function resetSearch() {
     document.getElementById('searchResults').innerHTML = '';
 }
-
-function updateAbout() {
-    const teamMembers = [
-        {
-            name : 'John Doe',
-            title: 'CEO',
-            description: 'John is responsible for',
-        },
-        {
-            name : 'Celina Thomas',
-            title: 'Team Lead',
-            description: 'Celina Thomas is responsible for',
-        },
-        {
-            name : 'Mike Tyson',
-            title: 'Delivery Head',
-            description: 'Mike Tyson is responsible for',
-        }
-    ];
-
-    const team = document.getElementsByClassName('teamMembers');
-    team.innerHTML = '';
-
-    debugger;
-    teamMembers.forEach((member) => {
-        team.innerHTML += `<h3 class = 'team'>${member.name}</h3>
-            <p class = 'teamDescription'>${member.description}</p>
-            <button class = 'teamTitle' disabled = true>${member.title}</button>
-        `;
-    });
-}
