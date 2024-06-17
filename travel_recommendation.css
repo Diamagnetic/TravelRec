@@ -114,6 +114,7 @@ button:hover {
 
 #searchResults {
     float: right;
+    margin-top: 20px;
 }
 
 .searchResult {
