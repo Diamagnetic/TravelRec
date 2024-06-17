@@ -2,7 +2,7 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8'>
-        <title>About Us - Travel Reco</title>
+        <title>Contact Us - Travel Reco</title>
     <link rel='stylesheet' href='./travel_recommendation.css'>
     </head>
 
@@ -13,10 +13,12 @@
             <a href = './travel_recommendation_contact.html'>Contact Us</a>
         </nav>
 
-        <h1>CONTACT US</h1>
-        <p>
-            Get in touch
-        </p>
+        <div id = 'contactDesc'>
+            <h1>CONTACT US</h1>
+            <p>
+                Get in touch
+            </p>
+        </div>
 
         <form id = 'contact'>
             <div>
@@ -39,11 +41,11 @@
                     <label for = 'message'>Message</label>
                 </div>
                 <div>
-                    <input type = 'text' id = 'message' name = 'message' placeholder = 'Enter your message'>
+                    <textarea id = 'message' name = 'message' placeholder = 'Enter your message'></textarea>
                 </div>
             </div>
             <div>
-                <button type ='submit' id = 'submitContactInfo' onclick = 'submitContactInfo()'>Search</button>
+                <button type ='submit' id = 'submitContactInfo'>Submit</button>
             </div>
         </form>
     </body>

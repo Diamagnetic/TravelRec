@@ -199,3 +199,62 @@ h2 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
     font-weight: 700;
 }
+
+/*CSS, specifically, for contact page*/
+
+#contactDesc {
+    display: inline-block;
+    width: 50%;
+    margin-top: 10vw;
+}
+
+#contact {
+    float: right;
+    margin-top: 10vw;
+    margin-right: 5vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 32px;
+    width: 32vw;
+    border-radius: 5px;
+}
+
+#contact label {
+    color: darkturquoise;
+}
+
+#contact input {
+    width: 32vw;
+    height: 32px;
+    border-radius: 5px;
+    color: turquoise;
+    background-color: transparent;
+    border-color: turquoise;
+    border-width: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#contact textarea {
+    width: 32vw;
+    height: 32px;
+    border-radius: 5px;
+    color: turquoise;
+    background-color: transparent;
+    border-color: turquoise;
+    border-width: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#contact input::placeholder {
+    color: turquoise;
+}
+
+#contact textarea::placeholder {
+    color: turquoise;
+}
+
+#contact button {
+    margin-left: 0px;
+    width: 32vw;
+}
